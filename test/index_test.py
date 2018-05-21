@@ -39,7 +39,7 @@ class TestPlotly(unittest.TestCase):
         self.assertTrue(isinstance(layout(), dict))
 
     def test_layout_adds_x_axis(self):
-        self.assertTrue(layout([1, 5], {'xaxis': {'range': [1, 5]}}))
+        self.assertTrue(layout([1, 5]), {'xaxis': {'range': [1, 5]}})
 
     def test_layout_adds_y_axis(self):
         self.assertTrue(layout(y_range = [2, 5]), {'yaxis': {'range': [2, 5]}})
